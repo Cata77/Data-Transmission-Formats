@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.epam.training.modeltransformer'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testImplementation 'org.jsoup:jsoup:1.11.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation 'jakarta.json:jakarta.json-api:2.0.1'
+    implementation 'org.glassfish:jakarta.json:2.0.1'
+    implementation project(':app')
+}
+
+test {
+    useJUnitPlatform()
+}
