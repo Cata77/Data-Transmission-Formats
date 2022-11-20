@@ -18,7 +18,7 @@ public class Application {
 
     private void transform() {
         TriangleTransformer triangleTransformer = new TriangleTransformer();
-        triangleTransformer.transform(TETRAHEDRON_JSON, TETRAHEDRON_HTML, TETRA_ANGLE);
-        //triangleTransformer.transform(EIFFEL_JSON, EIFFEL_HTML, EIFFEL_ANGLE);
+        //triangleTransformer.transform(TETRAHEDRON_JSON, TETRAHEDRON_HTML, TETRA_ANGLE);
+        triangleTransformer.transform(EIFFEL_JSON, EIFFEL_HTML, EIFFEL_ANGLE);
     }
 }

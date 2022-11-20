@@ -37,7 +37,7 @@ public  class Point {
 
     @Override
     public String toString() {
-        return "com.epam.training.modeltransformer.transformer.TriangleTransformer.Triangle{" +
+        return "Point{" +
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
