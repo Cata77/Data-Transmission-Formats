@@ -3,6 +3,8 @@ package modeltransformer;
 import modeltransformer.rotation.Angle;
 import modeltransformer.transformer.TriangleTransformer;
 
+import java.util.Scanner;
+
 public class Application {
     private static final String EIFFEL_JSON = "input/eiffel.json";
     private static final String EIFFEL_HTML = "output/eiffel.html";
@@ -17,8 +19,13 @@ public class Application {
     }
 
     private void transform() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose option:");
+        String option = scanner.nextLine();
         TriangleTransformer triangleTransformer = new TriangleTransformer();
-        //triangleTransformer.transform(TETRAHEDRON_JSON, TETRAHEDRON_HTML, TETRA_ANGLE);
-        triangleTransformer.transform(EIFFEL_JSON, EIFFEL_HTML, EIFFEL_ANGLE);
+
+        if (option.equalsIgnoreCase("tetrahedron"))
+            triangleTransformer.transform(TETRAHEDRON_JSON, TETRAHEDRON_HTML, TETRA_ANGLE);
+        else triangleTransformer.transform(EIFFEL_JSON, EIFFEL_HTML, EIFFEL_ANGLE);
     }
 }
