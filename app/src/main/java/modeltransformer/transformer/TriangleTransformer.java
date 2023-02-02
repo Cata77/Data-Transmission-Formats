@@ -21,8 +21,31 @@ public class TriangleTransformer {
     private List<Triangle> triangles = new ArrayList<>();
 
     public void transform(String inputFilePath, String outputFilePath, Angle angle) {
-        File file = new File(inputFilePath);
         List<Integer> listNumbers = new ArrayList<>();
+        readFile(inputFilePath, listNumbers);
+
+        for (int i = 0; i < listNumbers.size(); i = i + 3)
+            createPoint(listNumbers, i);
+
+        points.forEach(pt -> rotateMatrix(pt, angle));
+
+        double xMin = points.stream().mapToDouble(Point::getX).min().orElse(Double.MAX_VALUE);
+        if (xMin < 0)
+            points.forEach(point -> point.setX(point.getX() + Math.abs(xMin)));
+
+        double yMin = points.stream().mapToDouble(Point::getY).min().orElse(Double.MAX_VALUE);
+        if (yMin < 0)
+            points.forEach(point -> point.setY(point.getY() + Math.abs(yMin)));
+
+        for (int i = 0; i < points.size(); i = i + 3)
+            createTriangle(i);
+
+        triangles = triangles.stream().sorted(Comparator.comparing(Triangle::getzAverage).reversed()).collect(Collectors.toList());
+        createDocument(triangles, outputFilePath);
+    }
+
+    private static void readFile(String inputFilePath, List<Integer> listNumbers) {
+        File file = new File(inputFilePath);
         try {
             FileReader fileReader = new FileReader(file);
             try (JsonParser jsonParser = Json.createParser(fileReader)) {
@@ -36,23 +59,6 @@ public class TriangleTransformer {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-        for (int i = 0; i < listNumbers.size(); i = i + 3)
-            createPoint(listNumbers, i);
-
-        points.forEach(tr -> rotateMatrix(tr, angle));
-
-        double xMin = points.stream().mapToDouble(Point::getX).min().orElse(Double.MAX_VALUE);
-        points.forEach(point -> point.setX(point.getX() + Math.abs(xMin)));
-
-        double yMin = points.stream().mapToDouble(Point::getY).min().orElse(Double.MAX_VALUE);
-        points.forEach(point -> point.setY(point.getY() + Math.abs(yMin)));
-
-        for (int i = 0; i < points.size(); i = i + 3)
-            createTriangle(i);
-
-        triangles = triangles.stream().sorted(Comparator.comparing(Triangle::getzAverage).reversed()).collect(Collectors.toList());
-        createDocument(triangles, outputFilePath);
     }
 
     private void createTriangle(int i) {

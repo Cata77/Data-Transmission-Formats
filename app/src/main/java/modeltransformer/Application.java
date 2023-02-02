@@ -20,7 +20,7 @@ public class Application {
 
     private void transform() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose option:");
+        System.out.println("Choose option (tetrahedron/eiffel):");
         String option = scanner.nextLine();
         TriangleTransformer triangleTransformer = new TriangleTransformer();
 
