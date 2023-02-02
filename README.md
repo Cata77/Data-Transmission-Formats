@@ -197,7 +197,10 @@ Use the following rotation angles on the three axles for the Eiffel-tower (given
 
 <img width="170" alt="image" src="https://user-images.githubusercontent.com/63099068/216323409-850fd950-0283-485c-b1b2-76808a0ad632.png">
 
+## Technology
+- Read the input json with JSON-P Streaming API.
 
+- Write the SVG with StAX XML API
 
 
 
