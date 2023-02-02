@@ -174,10 +174,28 @@ Step 3: Finally rotating the point on the Z axis by 0.5 radian will result in th
 **Notes**: The demonstrated algorithm rotated only one point once on each of the three axles. This algorithm has to be applied on all points of each triangle.
 This means that all three points of a triangle have to be rotated three times
 
+## Mapping to 2D
+1. Offset the coordinates: find the smallest x coordinate out of all of the points, if it is negative add its absolute value to every x coordinate, else do
+nothing. Do the same with the y coordinates.
 
+2. Sort the triangles: for each triangle take the average z value of the points, sort the triangles by that value in descending order.
 
+3. Write the triangles in the given order, as polygon, only the x and, y coordinates
 
+## Eiffel tower
+Sample input files are provided in the initial code repository.
 
+This is the Eiffel tower visualized after conversion:
+
+Use the following rotation angles on the three axles for the Eiffel-tower (given in radian):
+
+  - X axis: 1.8
+
+  - Y axis: -0.5
+
+  - Z axis: 0
+
+<img width="170" alt="image" src="https://user-images.githubusercontent.com/63099068/216323409-850fd950-0283-485c-b1b2-76808a0ad632.png">
 
 
 
