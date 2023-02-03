@@ -1,8 +1,6 @@
 
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-A
-input/eiffel.json,4\1\41ab5c85c62e6f69d460e2a7e8e153949d26f005
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 7
@@ -24,8 +22,6 @@ G.idea/sonarlint/issuestore/3/5/35e463e81f2787922cccafa51c6d32b002cc6a38,b\6\b6
 w
 G.idea/sonarlint/issuestore/f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e,5\2\52114fdaa426e9b83a3c5df4e11c4f0ebbcd814b
 w
-G.idea/sonarlint/issuestore/a/b/ab53b67c864313c638c062b6c9418c22f8fb202a,e\5\e58704f9dbf127b9b716e235f2170be8ea5ed5a4
-w
 G.idea/sonarlint/issuestore/2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3,9\a\9aed88f31eac276604c6355c1adcc0bce1f80fd6
 w
 G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b\f\bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf
@@ -35,5 +31,27 @@ w
 G.idea/sonarlint/issuestore/0/5/05efc8b1657769a27696d478ded1e95f38737233,3\c\3c8c56407c35e5f5ebbd6c7250a79af8128a13a6
 w
 G.idea/sonarlint/issuestore/f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164,3\1\31073cf3a12b082ef2fe0f9403916a4db3811c89
+i
+9app/src/main/java/modeltransformer/transformer/Point.java,6\b\6b1abb4041a98f159781ae3b0c2ca4fb379cabc6
+l
+<app/src/main/java/modeltransformer/transformer/Triangle.java,a\b\ab53b67c864313c638c062b6c9418c22f8fb202a
+B
+output/eiffel.html,4\6\46fa9a875cce1da91dfbf2270d4e8f481f5ec425
 w
-G.idea/sonarlint/issuestore/6/b/6b1abb4041a98f159781ae3b0c2ca4fb379cabc6,5\4\54402d97243230edd40a49f51f7ea601288162d2
+G.idea/sonarlint/issuestore/9/a/9aed88f31eac276604c6355c1adcc0bce1f80fd6,0\1\0188cc1adb7d21a369f63788309ba8ab137ed687
+w
+G.idea/sonarlint/issuestore/d/9/d9c8c55cb2cb3ad3fdfe378feb0f4cfcde732ad2,1\9\19ff64d2ffc57b825c9e6cd9a7758fb743694f34
+w
+G.idea/sonarlint/issuestore/d/8/d8fbbf2994c5409a4f15cd92838be5d3c904a683,9\6\962495b15af8d838259d26d9a0716e731c173bbb
+w
+G.idea/sonarlint/issuestore/f/7/f7819ea138c33fec28e7e536cb2de34db38fc121,6\7\67fa304b8cddf1fed80b91f5b705d64cb3dab32a
+w
+G.idea/sonarlint/issuestore/3/1/31073cf3a12b082ef2fe0f9403916a4db3811c89,e\4\e4f81abd3815cee45769fdb6b471f1a5f7dca867
+w
+G.idea/sonarlint/issuestore/3/c/3c8c56407c35e5f5ebbd6c7250a79af8128a13a6,b\3\b328f357ace733e055243caece463497459b9593
+w
+G.idea/sonarlint/issuestore/b/f/bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf,8\6\86e8db510ff6fc8d28a5e38849fe0e9eacae62ae
+w
+G.idea/sonarlint/issuestore/b/6/b684036f27219b570204533fe43401a359e6eaa4,0\1\01f0373598d81d5cc8ae1a3cf0aebbd08d1f38fc
+w
+G.idea/sonarlint/issuestore/5/2/52114fdaa426e9b83a3c5df4e11c4f0ebbcd814b,6\c\6c2193e090c53ebe039a28ee0f93415902762a26
