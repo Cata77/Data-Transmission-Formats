@@ -19,7 +19,7 @@ This is a tetrahedron shape (formatting can be strange; reason is to fit on one 
     {
       "x" : -100,
       "y" : 100,
-      "z" : 0
+      "z" : -100
     },
     {
       "x" : 100,
